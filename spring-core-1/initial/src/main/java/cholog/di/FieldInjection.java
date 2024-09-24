@@ -6,9 +6,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class FieldInjection {
 
-    /*
-    FieldInjection으로 InjectionBean 주입받기
-     */
+
+    @Autowired // 변수 선언부에 어노테이션 붙여 의존성 주입
     private InjectionBean injectionBean;
 
     public String sayHello() {
